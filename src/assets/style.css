@@ -1,0 +1,233 @@
+.page {
+  background-color: blueviolet;
+}
+
+.page .container {
+  background: black;
+  height: 83.6vh;
+  position: relative;
+  top: 100px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.page .container .logo {
+  background-color: #383030;
+  width: 300px;
+  height: 96px;
+  border-radius: 50%;
+  position: relative;
+  left: 40%;
+  top: 20px;
+}
+
+.page .container .logo h3 {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#AF1818), to(#0D7DE4));
+  background: linear-gradient(to right, #AF1818, #0D7DE4);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+  font-size: 41px;
+  letter-spacing: 39px;
+  left: 65px;
+  padding-top: 20px;
+}
+
+.page .container .upper-input, .page .container .lower-input {
+  -webkit-transform: translate(235px, 80px);
+          transform: translate(235px, 80px);
+}
+
+.page .container .upper-input input, .page .container .lower-input input {
+  width: 300px;
+  text-align: right;
+  font-size: 18px;
+  outline: none;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  caret-color: white;
+  color: white;
+  background-color: #AF1818;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.page .container .upper-input .lower-value, .page .container .lower-input .lower-value {
+  text-align: right;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  height: 35px;
+  background-color: #AF1818;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.page .container .upper-input .lower-value::-webkit-inner-spin-button, .page .container .lower-input .lower-value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.page .container .upper-input .currency-name, .page .container .lower-input .currency-name {
+  background-color: #383030;
+  color: white;
+  width: 55px;
+  height: 25px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.page .container .upper-input .currency-result, .page .container .lower-input .currency-result {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  height: 25px;
+  background-color: #383030;
+  color: white;
+  left: 69px;
+  top: 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.page .container .upper-input, .page .container .upper-label {
+  margin-bottom: 28px;
+}
+
+.page .container .upper-label, .page .container .lower-label {
+  -webkit-transform: translate(-250px, 80px);
+          transform: translate(-250px, 80px);
+  background: #383030;
+  color: white;
+  text-align: center;
+  height: 35px;
+}
+
+.page .container .upper-label label, .page .container .lower-label label {
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.page .container .lower-label {
+  cursor: pointer;
+}
+
+.page .container .lower-label .choose-country {
+  width: 126px;
+  padding-left: 20px;
+  padding-top: 3px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.page .container .lower-label select {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 35px;
+  background: #383030;
+  border: none;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  z-index: 1;
+}
+
+.overlay .container {
+  width: 50%;
+  height: 100%;
+  background-color: #403636;
+}
+
+.overlay .container .close-btn {
+  top: 0;
+  cursor: pointer;
+  background-color: #C00303;
+  position: absolute;
+  right: 25%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.overlay .container option {
+  color: white;
+  position: relative;
+  left: 45%;
+  top: 30px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+  .page {
+    position: fixed;
+    height: 480px;
+  }
+  .page .container {
+    width: 95%;
+  }
+  .page .container .logo {
+    position: relative;
+    left: 9%;
+  }
+  .page .container .upper-input, .page .container .lower-input {
+    position: relative;
+    left: -54%;
+    width: 300px;
+  }
+  .page .container .upper-input {
+    top: 25px;
+  }
+  .page .container .upper-label {
+    position: relative;
+    left: 90%;
+    width: 200px;
+    top: -82px;
+  }
+  .page .container .upper-label label {
+    line-height: 0;
+  }
+  .page .container .lower-label {
+    position: relative;
+    left: 90%;
+    width: 200px;
+    top: -45px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
